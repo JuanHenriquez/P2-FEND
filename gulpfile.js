@@ -1,11 +1,12 @@
 'use strict';
 
-var gulp     = require('gulp'),
-    concat   = require('gulp-concat'),
-    uglify   = require('gulp-uglify'),
+var gulp = require('gulp'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
     cleanCSS = require('gulp-clean-css'),
     gulpSass = require('gulp-sass'),
-    rename   = require('gulp-rename');
+    rename = require('gulp-rename'),
+    imageOptim = require('gulp-imageoptim');
 
 /*
 * TASKS
@@ -35,6 +36,38 @@ gulp.task('minifyJs', function(){
         .pipe(uglify())
         .pipe(rename('app.min.js'))
         .pipe(gulp.dest('./dist/js'))
+});
+
+/* Add vendor files to dist */
+gulp.task('update-files', function(){
+    
+    /* Add Roboto font and Material Icons */
+    gulp.src('bower_components/Materialize/font/**')
+        .pipe(gulp.dest('./dist/font/'));
+    
+    /* Add materialize.css */
+    gulp.src('bower_components/Materialize/sass/materialize.scss')
+        .pipe(gulpSass().on('error', gulpSass.logError))
+        .pipe(cleanCSS({debug: true}, function(details){
+            console.log("The file " + details.name + "(" +  details.stats.originalSize + "kb)" + " has been compresed to " + details.stats.minifiedSize + "kb");
+        }))
+        .pipe(rename('materialize.min.css'))
+        .pipe(gulp.dest('./dist/css'));
+    
+    /* Add materialize.js */
+    gulp.src('bower_components/Materialize/dist/js/materialize.min.js')
+        .pipe(gulp.dest('./dist/js'));
+    
+    /* Add jquery */
+    gulp.src('bower_components/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest('./dist/js'));
+});
+
+/* Optimize all pictures */
+gulp.task('optimize-pictures', function(){
+    return gulp.src('dist/images/*.jpg')
+        .pipe(imageOptim.optimize())
+        .pipe(gulp.dest('dist/images/production/'));
 });
 
 
