@@ -5,9 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Juan Henriquez's Portfolio</title>
-    
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
+
     <!-- Css Files -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css"/>
@@ -43,7 +41,7 @@
             
             <div class="parallax-container">
                 <div class="parallax">
-                    <img src="images/main-bg-phone.jpg" alt="Parallax Picture" srcset="images/main-bg-tablet.jpg 700w, images/main-bg-desktop.jpg 1x, images/main-bg-2x.jpg 2x">
+                    <img src="images/main-bg-phone.jpg" alt="Parallax Picture" sizes="(min-width: 800px) 50vh, 100vh" srcset="images/main-bg-tablet.jpg 800w, images/main-bg-desktop.jpg 1200w, images/main-bg-2x.jpg 2000w">
                 </div>
                 <div class="bg-overlay">
                     <div id="main-title">
@@ -67,7 +65,7 @@
                         <div class="col s12 m6">
                             <div class="card" id="card-profile">
                                 <div class="card-image">
-                                    <img src="images/perfil-phone.jpg" alt="Profile Picture" srcset="images/perfil.jpg 600w">
+                                    <img src="images/perfil-phone.jpg" alt="Profile Picture" sizes="(min-width: 800px) 50vh, 100vh" srcset="images/perfil.jpg 600w">
                                 </div>
                             </div> <!-- /.card -->
                         </div>
@@ -100,7 +98,7 @@
                         <div class="col s12">
                             <div id="portfolio-controls">
                                 <a class="chip active">All</a>
-                                <a class="chip" data-project="web-aplications">Web Aplications</a>
+                                <a class="chip" data-project="web-applications">Web Applications</a>
                                 <a class="chip" data-project="plugins">Plugins</a>
                                 <a class="chip" data-project="designs">Designs</a>
                             </div>
@@ -111,53 +109,53 @@
                             <!-- Portolio cards section -->
                             <div id="portfolio-container" class="row">
                                 <!-- Project Item -->
-                                <div class="col s12 m6 l4 portfolio-item" data-groups='["web-aplications"]'>
+                                <article class="col s12 m6 l4 portfolio-item" data-groups='["web-applications"]'>
                                     <div class="card">
                                         <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="images/main-bg-tablet.jpg">
+                                            <img class="activator" src="images/img-project-1.jpg" alt="Project 1 Picture">
                                         </div>
                                         <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                            <p><a href="#">This is a link</a></p>
+                                            <h5 class="card-title activator grey-text text-darken-4">Project 1<i class="material-icons right">more_vert</i></h5>
+                                            <p><a href="https://github.com/JuanHenriquez">Github Repository</a></p>
                                         </div>
                                         <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                        </div>
+                                            <span class="card-title grey-text text-darken-4">Project 1<i class="material-icons right">close</i></span>
+                                            <p>Here is some text information about this project.</p>
+                                        </div> <!-- /.card-reveal -->
                                     </div>
-                                </div> <!-- /.portfolio-item -->
+                                </article> <!-- /.portfolio-item -->
                                 <!-- Project Item -->
-                                <div class="col s12 m6 l4 portfolio-item" data-groups='["designs"]'>
+                                <article class="col s12 m6 l4 portfolio-item" data-groups='["designs"]'>
                                     <div class="card">
                                         <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="images/main-bg-tablet.jpg">
+                                            <img class="activator" src="images/img-project-2.jpg" alt="Project 2 Picture">
                                         </div>
                                         <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                            <p><a href="#">This is a link</a></p>
+                                            <h5 class="card-title activator grey-text text-darken-4">Project 2<i class="material-icons right">more_vert</i></h5>
+                                            <p><a href="https://github.com/JuanHenriquez">Github Repository</a></p>
                                         </div>
                                         <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                            <span class="card-title grey-text text-darken-4">Project 2<i class="material-icons right">close</i></span>
+                                            <p>Other text with information about this project.</p>
                                         </div>
                                     </div>
-                                </div> <!-- /.portfolio-item -->
+                                </article> <!-- /.portfolio-item -->
                                 <!-- Project Item -->
-                                <div class="col s12 m6 l4 portfolio-item" data-groups='["plugins"]'>
+                                <article class="col s12 m6 l4 portfolio-item" data-groups='["plugins"]'>
                                     <div class="card">
                                         <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="images/main-bg-tablet.jpg">
+                                            <img class="activator" src="images/img-project-3.jpg" alt="Project 3 Picture">
                                         </div>
                                         <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                            <p><a href="#">This is a link</a></p>
+                                            <h5 class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></h5>
+                                            <p><a href="https://github.com/JuanHenriquez">Github Repository</a></p>
                                         </div>
                                         <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                            <span class="card-title grey-text text-darken-4">Project 3<i class="material-icons right">close</i></span>
+                                            <p>Other text about project 3.</p>
                                         </div>
                                     </div>
-                                </div> <!-- /.portfolio-item -->
+                                </article> <!-- /.portfolio-item -->
                             </div>
                         </div>
                     </div>
