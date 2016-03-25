@@ -18,21 +18,21 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <section>
+    <section id="main-section">
         <header>
             <div class="navbar-fixed">
                 <nav>
                     <div class="container">
                         <div class="nav-wrapper">
-                            <a href="#!" class="brand-logo">JuanHenriquez</a>
+                            <a href="#main-section" class="brand-logo" data-scroll>JuanHenriquez</a>
                             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="#">About Me</a></li>
-                                <li><a href="#">Projects</a></li>
+                                <li><a href="#about-section" data-scroll>About Me</a></li>
+                                <li><a href="#portfolio-section" data-scroll>Projects</a></li>
                             </ul>
                             <ul class="side-nav" id="mobile-demo">
-                                <li><a href="#">About Me</a></li>
-                                <li><a href="#">Projects</a></li>
+                                <li><a href="#about-section" data-scroll>About Me</a></li>
+                                <li><a href="#portfolio-section" data-scroll>Projects</a></li>
                             </ul>
                         </div> <!-- /.nav-wrapper -->
                     </div> <!-- /.container -->
@@ -54,10 +54,10 @@
             </div> <!-- /.parallax-container -->
             
             <!-- Sections -->
-            <div class="section" id="about">
+            <div class="section" id="about-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col s12 m4">
+                        <div class="col s12">
                             <div class="section__title">
                                 <h2>About</h2>
                             </div>
@@ -75,7 +75,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <span class="card-title">My History</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolor fuga eius perspiciatis hic. Dolorem, repellendus, consequuntur! Inventore, officiis vitae aperiam officia velit voluptas dolor voluptatibus dolores, consequatur libero earum?</p>
+                                    <p>Hello, Front-End Developer from Carabobo, Venezuela. I am currently a student of computer engineering at the University Jose Antonio Paez. 
+                                    I am dedicated to the development and design of web pages. I use my free time to improve my knowledge and skills to be a better professional.</p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
@@ -86,12 +87,77 @@
                     </div>
                 </div>
             </div> <!-- /#about -->
-            <div class="section" id="portfolio">
+            <div class="section" id="portfolio-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col s12 m4">
+                        <div class="col s12">
                             <div class="section__title">
                                 <h2>Portfolio Showcase</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div id="portfolio-controls">
+                                <a class="chip active">All</a>
+                                <a class="chip" data-project="web-aplications">Web Aplications</a>
+                                <a class="chip" data-project="plugins">Plugins</a>
+                                <a class="chip" data-project="designs">Designs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <!-- Portolio cards section -->
+                            <div id="portfolio-container" class="row">
+                                <!-- Project Item -->
+                                <div class="col s12 m6 l4 portfolio-item" data-groups='["web-aplications"]'>
+                                    <div class="card">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="images/main-bg-tablet.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- /.portfolio-item -->
+                                <!-- Project Item -->
+                                <div class="col s12 m6 l4 portfolio-item" data-groups='["designs"]'>
+                                    <div class="card">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="images/main-bg-tablet.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- /.portfolio-item -->
+                                <!-- Project Item -->
+                                <div class="col s12 m6 l4 portfolio-item" data-groups='["plugins"]'>
+                                    <div class="card">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="images/main-bg-tablet.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- /.portfolio-item -->
                             </div>
                         </div>
                     </div>
@@ -103,7 +169,10 @@
     
     <!-- Js Files -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
