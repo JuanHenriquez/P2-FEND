@@ -4,11 +4,11 @@ For this project i build a personal portfolio site to put all project i will mak
 
 This repository has two main branches: master and gh-pages.
 
-> ** master **: Here are all the files in production and distribution.
+> **master**: Here are all the files in production and distribution.
 
-> ** gh-pages **: They are only the distribution files needed to properly display the web page.
+> **gh-pages**: They are only the distribution files needed to properly display the web page.
 
-> ** CSS code **: For the development of this project, i use SASS as a pre-processor for the CSS. The main file style.scss is in the src/css folder and the compiled code is automatically added to the dist/folder as style.css.
+> **CSS code**: For the development of this project, i use SASS as a pre-processor for the CSS. The main file style.scss is in the src/css folder and the compiled code is automatically added to the dist/folder as style.css.
 
 This portfolio has 3 notable sections.
 
@@ -20,7 +20,7 @@ This portfolio has 3 notable sections.
 
 #### Frameworks:
 
-* [Materializecss](http://materializecss.com/getting-started.html): This is a ** Resposive Css/Javascript Framework ** based in the Design Patterns of Material Design by Google.
+* [Materializecss](http://materializecss.com/getting-started.html): This is a **Resposive Css/Javascript Framework** based in the Design Patterns of Material Design by Google.
 * [Jquery](https://jquery.com/): Javascript Framework.
 
 #### Plugins:
