@@ -2,6 +2,14 @@
 
 For this project i build a personal portfolio site to put all project i will make in the FRONT-END Nanodegree Course.
 
+This repository has two main branches: master and gh-pages.
+
+> ** master **: Here are all the files in production and distribution.
+
+> ** gh-pages **: They are only the distribution files needed to properly display the web page.
+
+> ** CSS code **: For the development of this project, i use SASS as a pre-processor for the CSS. The main file style.scss is in the src/css folder and the compiled code is automatically added to the dist/folder as style.css.
+
 This portfolio has 3 notable sections.
 
 * Fullscreen picture with a parallax effect.
@@ -23,3 +31,4 @@ This portfolio has 3 notable sections.
 #### Developer Tools:
 
 * [Gulp](http://gulpjs.com/): gulp keeps things simple and makes complex tasks manageable.
+* [SASS](http://sass-lang.com/): A CSS Pre-processor.
