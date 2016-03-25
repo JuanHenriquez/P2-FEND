@@ -61,6 +61,16 @@ gulp.task('update-files', function(){
     /* Add jquery */
     gulp.src('bower_components/jquery/dist/jquery.min.js')
         .pipe(gulp.dest('./dist/js'));
+    
+    /* Add Shuffle.js */
+    gulp.src('bower_components/shufflejs/dist/jquery.shuffle.min.js')
+        .pipe(gulp.dest('./dist/js'));
+    
+    /* Add Modernizr.js */
+    gulp.src('bower_components/modernizr/modernizr.js')
+        .pipe(uglify())
+        .pipe(rename('modernizr.min.js'))
+        .pipe(gulp.dest('./dist/js'));
 });
 
 /* Optimize all pictures */
