@@ -1,0 +1,160 @@
+/* Genereal Styles
+=================== */
+
+@font-face {
+    font-family: 'uni_sansheavy_caps';
+    src: url('../font/uni-sans-heavy/uni_sans_heavy-webfont.eot');
+    src: url('../font/uni_sans_heavy/uni_sans_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/uni-sans-heavy/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('../font/uni-sans-heavy/uni_sans_heavy-webfont.woff') format('woff'),
+         url('../font/uni-sans-heavy/uni_sans_heavy-webfont.ttf') format('truetype'),
+         url('../font/uni-sans-heavy/uni_sans_heavy-webfont.svg#uni_sansheavy_caps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$tcolor-primary: #263238;
+$tcolor-accent: #e91e63;
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+.section {
+    padding: 30px 0;
+}
+
+.section__title h2 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+/* Header
+============== */
+
+nav {
+    background-color: $tcolor-primary;
+}
+
+/* Parallax Image Section
+====================== */
+
+/* Container for the Big Title inside the main parallax picture. */
+#main-title {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -50px;
+    padding: 0 10px;
+
+    & h1,
+    & p {
+        margin: 0;
+    }
+
+    & h1 {
+        font-family: 'uni_sansheavy_caps';
+        font-size: 3.5em;
+        color: #fff;
+        text-shadow: 5px 1px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    & p {
+        font-size: 1.8em;
+        color: $tcolor-accent;
+        font-weight: 800;
+    }
+}
+
+.bg-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: calc(100vh - 64px);
+}
+
+.parallax-container {
+    height: calc(100vh - 64px);
+
+    & img {
+        width: 1000px;
+    }
+
+}
+
+/* About Me Section
+======================= */
+
+#about-section {
+    background-color: $tcolor-primary;
+}
+
+#card-profile {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto 30px auto;
+}
+
+#card-profile img{
+    width: 100%;
+}
+
+/* Porfolio Section */
+
+#portfolio-section {
+    background-color: #f5f5f5;
+
+    & .section__title h2{
+        color: $tcolor-primary;
+    }
+}
+
+
+#portfolio-controls {
+    text-align: center;
+}
+
+#portfolio-controls a {
+    cursor: pointer;
+    background-color: $tcolor-accent;
+    color: #fff;
+    padding: 0 16px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+
+#portfolio-controls a:hover,
+#portfolio-controls .active{
+    transform: scale(1.4);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*  MEDIA QUERIES */
+
+@media (min-width: 580px) {
+
+    #main-title h1{
+        font-size: 5em;
+    }
+
+}
+
+@media (min-width:1012px) {
+
+    #main-title {
+        height: 150px;
+        margin-top: -75px;
+    }
+
+}
